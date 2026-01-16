@@ -29,8 +29,8 @@
  \else
   \usepackage[automake,stylemods={tree}]{glossaries-extra}
  \fi
- 
 
+ 
 \usepackage{etoolbox}
 \usetikzlibrary{arrows.meta,positioning,calc,fit,backgrounds}
 
@@ -45,7 +45,7 @@
 \newglossary*{advanced}{Advanced Terms}
 \newglossary*{regulation}{ML Regulation}
 \newglossary*{reinflearning}{Reinforcement Learning}
-
+\newglossary*{healthcare}{Health Care}
 
 \usepackage[utf8]{inputenc} % allow utf-8 input
 \usepackage[T1]{fontenc}    % use 8-bit T1 fonts
@@ -168,6 +168,9 @@ rectangle, rounded corners, inner sep=10pt, inner ysep=20pt]
 \input{ADictML_Math.tex}
 \input{ADictML_RL.tex}
 \input{ADictML_Glossary_English.tex}
+\input{ADictML_HealthCare.tex}
+
+
 
  %\makeglossaries
 
@@ -278,6 +281,8 @@ to shape this dictionary. %Special thanks to Mikko Seesto for his meticulous pro
 \newpage
 \printglossary[type=regulation, title={Machine Learning Regulation}, nonumberlist]
 
+\newpage
+\printglossary[type=healthcare, title={Health Care}, nonumberlist]
 
 \iffastdraft
 % no index in draft
